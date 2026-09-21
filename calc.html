@@ -27,16 +27,46 @@
           <input id="esforco" type="range" min="1" max="5" step="1" value="3" />
           <small>1 automático · 5 deep work</small>
         </label>
+
         <div id="resultado" class="resultado" hidden>
           <p id="nivel"></p>
           <p id="custo"></p>
           <p id="conta"></p>
           <p id="motivo" hidden></p>
         </div>
+
         <div class="acoes">
           <button class="prim" id="salvar" type="submit">Salvar no card</button>
           <button class="ghost" id="limpar" type="button">Limpar</button>
         </div>
+
+        <details id="colinha" class="colinha">
+          <summary>Colinha das notas</summary>
+          <p><strong>Vontade</strong></p>
+          <ul>
+            <li>1 rejeito, adio sempre</li>
+            <li>2 só obrigação</li>
+            <li>3 neutro</li>
+            <li>4 quero fazer</li>
+            <li>5 puxa sozinho</li>
+          </ul>
+          <p><strong>Tempo</strong> (bloco contínuo)</p>
+          <ul>
+            <li>1 até 10 min</li>
+            <li>2 10–25 min</li>
+            <li>3 25–45 min</li>
+            <li>4 45–90 min</li>
+            <li>5 mais de 90 min · quebre</li>
+          </ul>
+          <p><strong>Esforço mental</strong></p>
+          <ul>
+            <li>1 automático</li>
+            <li>2 atenção leve</li>
+            <li>3 caminho conhecido</li>
+            <li>4 criar, decidir, resolver</li>
+            <li>5 deep work, começar do zero</li>
+          </ul>
+        </details>
       </form>
     </div>
     <script src="https://p.trellocdn.com/power-up.min.js"></script>

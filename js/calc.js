@@ -85,6 +85,13 @@
     pintar();
   }
 
+  var colinha = document.getElementById("colinha");
+  if (colinha && t && t.sizeTo) {
+    colinha.addEventListener("toggle", function () {
+      t.sizeTo("#app");
+    });
+  }
+
   if (t && t.render) {
     t.render(function () {
       return t

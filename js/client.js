@@ -31,7 +31,7 @@
             return t2.popup({
               title: "Energia 5-3-1",
               url: "./calc.html",
-              height: 520,
+              height: 560,
             });
           },
         },
@@ -57,7 +57,7 @@
               return t2.popup({
                 title: "Energia 5-3-1",
                 url: "./calc.html",
-                height: 520,
+                height: 560,
               });
             },
           },
@@ -79,7 +79,7 @@
             return t2.popup({
               title: "Energia 5-3-1",
               url: "./calc.html",
-              height: 520,
+              height: 560,
             });
           },
         },

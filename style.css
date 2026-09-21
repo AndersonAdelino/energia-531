@@ -18,6 +18,12 @@ html, body {
 
 #app { padding: 12px; }
 
+h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
 label.row {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -60,7 +66,10 @@ input[type="range"] {
   color: var(--muted);
 }
 
-.acoes { display: flex; gap: 8px; }
+.acoes {
+  display: flex;
+  gap: 8px;
+}
 
 button {
   border: 0;
@@ -69,7 +78,11 @@ button {
   font-size: 13px;
   cursor: pointer;
 }
-button.prim { background: #f4f4f4; color: #111; flex: 1; }
+button.prim {
+  background: #f4f4f4;
+  color: #111;
+  flex: 1;
+}
 button.ghost {
   background: transparent;
   color: var(--muted);
@@ -90,3 +103,29 @@ button.ghost {
 .box.media { border-color: var(--media); }
 .box.alta { border-color: var(--alta); }
 .box span { color: var(--muted); font-size: 12px; }
+
+.colinha {
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.colinha summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 12px;
+  list-style: none;
+}
+.colinha summary::-webkit-details-marker { display: none; }
+.colinha summary::before { content: "▸ "; }
+.colinha[open] summary::before { content: "▾ "; }
+.colinha p {
+  margin: 10px 0 4px;
+  font-size: 12px;
+}
+.colinha ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.colinha li { margin: 2px 0; }

@@ -8,22 +8,9 @@
   --alta: #e74c3c;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
 }
-
 * { box-sizing: border-box; }
-html, body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-}
-
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
 #app { padding: 12px; }
-
-h1 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0 0 12px;
-}
-
 label.row {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -31,101 +18,37 @@ label.row {
   margin: 0 0 14px;
   font-size: 13px;
 }
-
 label.row span.k { color: var(--ink); }
-label.row span.n {
-  font-variant-numeric: tabular-nums;
-  color: var(--muted);
-}
-label.row small {
-  grid-column: 1 / -1;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-input[type="range"] {
-  grid-column: 1 / -1;
-  width: 100%;
-  accent-color: #f4f4f4;
-}
-
-.resultado {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 12px;
-  margin: 8px 0 14px;
-}
+label.row span.n { font-variant-numeric: tabular-nums; color: var(--muted); }
+label.row small { grid-column: 1 / -1; color: var(--muted); font-size: 11px; }
+input[type="range"] { grid-column: 1 / -1; width: 100%; accent-color: #f4f4f4; }
+.resultado { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin: 8px 0 14px; }
 .resultado.baixa { border-color: var(--baixa); }
 .resultado.media { border-color: var(--media); }
 .resultado.alta { border-color: var(--alta); }
-
 #nivel { font-size: 20px; font-weight: 700; margin: 0; }
-#custo, #conta, #motivo {
-  margin: 4px 0 0;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.acoes {
-  display: flex;
-  gap: 8px;
-}
-
-button {
-  border: 0;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 13px;
-  cursor: pointer;
-}
-button.prim {
-  background: #f4f4f4;
-  color: #111;
-  flex: 1;
-}
-button.ghost {
-  background: transparent;
-  color: var(--muted);
-  border: 1px solid var(--line);
-}
-
-.box {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 10px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-size: 13px;
-}
+#custo, #conta, #motivo { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+.acoes { display: flex; gap: 8px; }
+button { border: 0; border-radius: 8px; padding: 10px 12px; font-size: 13px; cursor: pointer; }
+button.prim { background: #f4f4f4; color: #111; flex: 1; }
+button.ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.box { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; font-size: 13px; }
 .box.vazia { color: var(--muted); }
 .box.baixa { border-color: var(--baixa); }
 .box.media { border-color: var(--media); }
 .box.alta { border-color: var(--alta); }
 .box span { color: var(--muted); font-size: 12px; }
-
-.colinha {
-  margin-top: 14px;
-  border-top: 1px solid var(--line);
-  padding-top: 10px;
-}
-.colinha summary {
-  cursor: pointer;
-  color: var(--muted);
-  font-size: 12px;
-  list-style: none;
-}
+.ou { margin: 14px 0 8px; text-align: center; color: var(--muted); font-size: 11px; }
+.acoes.manual { margin-bottom: 4px; }
+button.forcar { flex: 1; border: 1px solid var(--line); background: transparent; color: var(--ink); }
+button.forcar.baixa { border-color: var(--baixa); }
+button.forcar.media { border-color: var(--media); }
+button.forcar.alta { border-color: var(--alta); }
+.colinha { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
+.colinha summary { cursor: pointer; color: var(--muted); font-size: 12px; list-style: none; }
 .colinha summary::-webkit-details-marker { display: none; }
 .colinha summary::before { content: "▸ "; }
 .colinha[open] summary::before { content: "▾ "; }
-.colinha p {
-  margin: 10px 0 4px;
-  font-size: 12px;
-}
-.colinha ul {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--muted);
-  font-size: 12px;
-}
+.colinha p { margin: 10px 0 4px; font-size: 12px; }
+.colinha ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 12px; }
 .colinha li { margin: 2px 0; }

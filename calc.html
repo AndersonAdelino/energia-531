@@ -27,19 +27,22 @@
           <input id="esforco" type="range" min="1" max="5" step="1" value="3" />
           <small>1 automático · 5 deep work</small>
         </label>
-
         <div id="resultado" class="resultado" hidden>
           <p id="nivel"></p>
           <p id="custo"></p>
           <p id="conta"></p>
           <p id="motivo" hidden></p>
         </div>
-
         <div class="acoes">
-          <button class="prim" id="salvar" type="submit">Salvar no card</button>
+          <button class="prim" id="salvar" type="submit">Salvar cálculo</button>
           <button class="ghost" id="limpar" type="button">Limpar</button>
         </div>
-
+        <p class="ou">ou defina na mão</p>
+        <div class="acoes manual">
+          <button class="forcar baixa" type="button" data-nivel="baixa">Baixa</button>
+          <button class="forcar media" type="button" data-nivel="media">Média</button>
+          <button class="forcar alta" type="button" data-nivel="alta">Alta</button>
+        </div>
         <details id="colinha" class="colinha">
           <summary>Colinha das notas</summary>
           <p><strong>Vontade</strong></p>

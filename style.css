@@ -1,0 +1,92 @@
+:root {
+  --bg: #111111;
+  --ink: #f4f4f4;
+  --muted: #9a9a9a;
+  --line: #2a2a2a;
+  --baixa: #2ecc71;
+  --media: #f1c40f;
+  --alta: #e74c3c;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+#app { padding: 12px; }
+
+label.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  margin: 0 0 14px;
+  font-size: 13px;
+}
+
+label.row span.k { color: var(--ink); }
+label.row span.n {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+label.row small {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+input[type="range"] {
+  grid-column: 1 / -1;
+  width: 100%;
+  accent-color: #f4f4f4;
+}
+
+.resultado {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 8px 0 14px;
+}
+.resultado.baixa { border-color: var(--baixa); }
+.resultado.media { border-color: var(--media); }
+.resultado.alta { border-color: var(--alta); }
+
+#nivel { font-size: 20px; font-weight: 700; margin: 0; }
+#custo, #conta, #motivo {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.acoes { display: flex; gap: 8px; }
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+button.prim { background: #f4f4f4; color: #111; flex: 1; }
+button.ghost {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+}
+
+.box {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+}
+.box.vazia { color: var(--muted); }
+.box.baixa { border-color: var(--baixa); }
+.box.media { border-color: var(--media); }
+.box.alta { border-color: var(--alta); }
+.box span { color: var(--muted); font-size: 12px; }

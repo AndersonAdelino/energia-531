@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calcular energia</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <form id="form">
+        <label class="row">
+          <span class="k">Vontade</span>
+          <span class="n" id="vontade-n">3</span>
+          <input id="vontade" type="range" min="1" max="5" step="1" value="3" />
+          <small>1 rejeito · 5 puxa sozinho</small>
+        </label>
+        <label class="row">
+          <span class="k">Tempo</span>
+          <span class="n" id="tempo-n">3</span>
+          <input id="tempo" type="range" min="1" max="5" step="1" value="3" />
+          <small>1 até 10 min · 5 mais de 90 min</small>
+        </label>
+        <label class="row">
+          <span class="k">Esforço mental</span>
+          <span class="n" id="esforco-n">3</span>
+          <input id="esforco" type="range" min="1" max="5" step="1" value="3" />
+          <small>1 automático · 5 deep work</small>
+        </label>
+        <div id="resultado" class="resultado" hidden>
+          <p id="nivel"></p>
+          <p id="custo"></p>
+          <p id="conta"></p>
+          <p id="motivo" hidden></p>
+        </div>
+        <div class="acoes">
+          <button class="prim" id="salvar" type="submit">Salvar no card</button>
+          <button class="ghost" id="limpar" type="button">Limpar</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+    <script src="./js/formula.js"></script>
+    <script src="./js/calc.js"></script>
+  </body>
+</html>
